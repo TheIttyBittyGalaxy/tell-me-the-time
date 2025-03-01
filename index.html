@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tell Me the Time</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="opening">
+    <div id="clock">
+        <span class="time">00:00</span><span class="am-pm">AM</span>
+    </div>
+
+    <div id="info-container">
+        <div id="info-interval">
+            Tell me the time every <select name="interval" id="interval-input">
+                <option value="1">minute</option>
+                <option value="2">2 minutes</option>
+                <option value="5">5 minutes</option>
+                <option value="10">10 minutes</option>
+                <option value="15">15 minutes</option>
+                <option value="20">20 minutes</option>
+                <option value="30">half hour</option>
+            </select>
+        </div>
+        <div id="info-bar">
+            <div id="info-bar-inner"></div>
+        </div>
+        <div id="info-bottom">
+            <button id="speak">
+                <i class="fa-solid fa-volume-up"></i>
+            </button>
+            <small id="next">
+                <span class="time">00:00</span><span class="am-pm">AM</span>
+            </small>
+        </div>
+    </div>
+</body>
+
+</html>
