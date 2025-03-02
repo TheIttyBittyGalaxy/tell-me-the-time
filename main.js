@@ -20,12 +20,9 @@ const as12hr = h => ((h + 11) % 12) + 1;
 const pad = x => x.toString().padStart(2, "0");
 
 function setClock(e, h, m) {
-	const time = e.querySelector(".time");
-	const ampm = e.querySelector(".am-pm");
-	m = m.toString().padStart(2, 0);
-
-	time.innerText = as12hr(h) + ":" + pad(m);
-	ampm.innerText = h > 12 ? "PM" : "AM";
+	e.querySelector(".hr").innerText = as12hr(h);
+	e.querySelector(".min").innerText = pad(m);
+	e.querySelector(".am-pm").innerText = h > 12 ? "PM" : "AM";
 }
 
 function readTime(h, m) {

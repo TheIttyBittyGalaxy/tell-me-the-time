@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 body {
-	--color-dark: #0b0a0e;
+	--color-dark: #0d0c11;
 	--color-accent: #629677;
 	--color-light: #f1e4e8;
 
-	font-family: sans-serif;
+	font-family: "Roboto", sans-serif;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -20,8 +22,18 @@ body {
 	z-index: 0;
 }
 
+.sep {
+	margin: -0.3ch;
+}
+
+#clock,
+#next {
+	font-family: "Space Mono", serif;
+}
+
 #clock {
-	font-size: 14em;
+	font-size: 10em;
+	padding-right: 0.1ch;
 }
 
 #next {
@@ -70,12 +82,13 @@ button {
 
 	option {
 		background-color: var(--color-accent);
+		font-size: 0.8em;
 	}
 }
 
 #interval-input,
 button {
-	background: none;
+	background-color: var(--color-dark);
 	border-radius: 2px;
 	border: 2px solid var(--color-accent);
 	transition: background-color 0.1s;
